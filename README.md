@@ -112,10 +112,10 @@ If Copilot accepts the command but the deployment hangs:
     -   Ensure the `runs-on` label in the workflow matches your `RUNNER_SET` config.
     -   Ensure your runner has outbound connectivity to GitHub.
 
-### 3. Verify Legacy/VMC2 Access
+### 3. Verify Legacy Access
 If the job fails during execution:
--   **XL Release**: Check if the runner can reach the XL Release server.
--   **VMC2 Gateway**: Check if the runner can resolve the `{{VMC2_GATEWAY}}` address defined in your `setup.sh`.
+-   **Orchestrator**: Check if the runner can reach the legacy orchestration server.
+-   **Connectivity**: Check if the runner can resolve the `{{CONNECTIVITY}}` address defined in your `setup.sh`.
 
 ## Technical Requirements
 
