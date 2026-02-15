@@ -56,7 +56,7 @@ mkdir -p "$SKILL_ROOT/docs"
 
 echo "Installing assets to $SKILL_ROOT/..."
 
-cp "$TEMPLATE_DIR/scripts/deploy_wrapper.sh" "$SKILL_ROOT/scripts/"
+
 
 if [ ! -f "$SKILL_ROOT/config/skill.conf" ]; then
     cp "$TEMPLATE_DIR/config/skill.conf.example" "$SKILL_ROOT/config/skill.conf"

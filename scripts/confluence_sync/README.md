@@ -29,13 +29,13 @@ If you are setting this up for the first time or need to update dependencies:
 2.  Edit `scripts/confluence_sync/confluence.conf` with your details.
 3.  Run the sync:
     ```bash
-    ./scripts/confluence_sync/sync_wrapper.sh
+    ./scripts/confluence_sync/run_confluence_sync.sh
     ```
 
 Alternatively, you can skip the config file and just export environment variables:
 ```bash
 export CONFLUENCE_URL="..."
-./scripts/confluence_sync/sync_wrapper.sh
+./scripts/confluence_sync/run_confluence_sync.sh
 ```
 
 ### Option 2: Direct Python Execution

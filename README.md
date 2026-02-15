@@ -27,7 +27,7 @@ The `.github/skills/deploy-skill/SKILL.md` file is the **brain** of your custom 
 copilot-developer-skills/
 ├── setup.sh                # Interactive installer script
 ├── .github/skills/         # The skill definition (SKILL.md)
-├── scripts/                # The wrapper script (deploy_wrapper.sh)
+├── scripts/                # Utility scripts (e.g. confluence sync)
 └── config/                 # Configuration templates
 ```
 
@@ -88,7 +88,7 @@ Once installed, committed, and pushed to your default branch:
 ## Customization
 
 - **Skill Definition**: Edit `.github/skills/deploy-skill/SKILL.md` to refine the instructions or instructions.
-- **Wrapper Logic**: Edit `scripts/deploy_wrapper.sh` to add logging, notifications, or complex logic.
+- **Wrapper Logic**: Edit your deployment script to add logging, notifications, or complex logic.
 - **Configuration**: Edit `config/skill.conf` to change the target environment or runner set.
 
 > [!TIP]

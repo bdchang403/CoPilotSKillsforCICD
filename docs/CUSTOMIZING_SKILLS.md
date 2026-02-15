@@ -45,7 +45,7 @@ The `## Instructions` section is the logic the agent follows. You can make it si
 
 | ❌ **Not Good** (Vague) | ✅ **Good** (Explicit) |
 | :--- | :--- |
-| `1. Deploy the code.` | `1. Check if the user is on the 'main' branch.`<br>`2. If yes, run './scripts/deploy_wrapper.sh'`<br>`3. If no, warn the user.` |
+| `1. Deploy the code.` | `1. Check if the user is on the 'main' branch.`<br>`2. If yes, run './scripts/deploy.sh'`<br>`3. If no, warn the user.` |
 | *Risk: Copilot might guess how to deploy.* | *Benefit: Deterministic behavior and safety checks.* |
 
 ### Scenario B: Handling User Input
