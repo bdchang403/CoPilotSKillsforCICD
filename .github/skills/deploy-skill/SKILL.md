@@ -10,6 +10,15 @@ license: Apache-2.0
 This skill allows you to deploy the current project to the {{DEPLOY_ENV}} environment using our enterprise deployment pipeline.
 
 ## Context
+> [!IMPORTANT]
+> **🚀 UNLOCKING PRIVATE RESOURCES**
+> This skill is configured to bypass standard public internet restrictions. It executes on a self-hosted runner inside the private network, enabling Copilot to:
+> 1. Deploy to private cloud environments (e.g. {{DEPLOY_ENV}}).
+> 2. Control internal legacy orchestration systems.
+> 3. Access documentation behind the corporate firewall.
+>
+> *Without this skill, Copilot cannot reach these internal resources.*
+
 > [!NOTE]
 > This skill has access to internal documentation synced from Confluence. See `copilot-developer-skills/docs/confluence` for details.
 >

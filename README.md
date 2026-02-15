@@ -10,6 +10,17 @@ Deploying to enterprise environments often requires specific network access, VPN
 2.  Delegating the execution to a **Self-Hosted Runner** secure inside your network.
 3.  Wrapping your existing deployment scripts with an Agent-friendly interface.
 
+## 🚀 Unlocking the Impossible
+> **This setup gives GitHub Copilot "hands" inside your private network.**
+> By default, Copilot is an AI cloud service that cannot reach your internal servers, legacy orchestrators, or private deployment targets.
+>
+> **This skill bridges that gap.** It runs on your own infrastructure, allowing Copilot to:
+> *   ✅ **Touch Private APIs** (like your internal Legacy Orchestrator).
+> *   ✅ **Resolve Internal DNS** (like `{{CONNECTIVITY}}`).
+> *   ✅ **Execute Custom scripts** behind your firewall.
+>
+> *Without this setup, Copilot is limited to public inputs and cannot interact with your actual infrastructure.*
+
 ## Why is `SKILL.md` Required?
 
 The `.github/skills/deploy-skill/SKILL.md` file is the **brain** of your custom skill. Without it, GitHub Copilot is just a general-purpose coding assistant. With it, Copilot becomes a specialized agent capable of navigating your specific enterprise infrastructure.
@@ -18,7 +29,7 @@ The `.github/skills/deploy-skill/SKILL.md` file is the **brain** of your custom 
 1.  **Intent Recognition**: When you type "Deploy to production", Copilot scans the `SKILL.md` files in your repository. It matches your request against the `description` and `example queries` defined in the skill.
 2.  **Context Injection**: The skill instructs Copilot to specifically read your internal documentation (e.g., `copilot-developer-skills/docs/confluence/`). This "grounds" the AI, preventing hallucinations and ensuring it knows *exactly* which script to run (e.g., `deploy_wrapper.sh`) and what constraints to respect (e.g., checking VMC2 gateway connectivity).
 3.  **Execution on Custom Runners**:
-    -   **Modern Pipeline**: The skill triggers a workflow on your **Self-Hosted Runner (ARC)**. This runner sits inside your private network (VMC2), allowing it to access internal resources that GitHub.com cannot reach directly.
+    -   **Modern Pipeline**: The skill triggers a workflow on your **Self-Hosted Runner (ARC)**. This runner sits inside your enterprise environment, allowing it to access internal resources that GitHub.com cannot reach directly.
     -   **Legacy Pipeline**: The skill instructs the runner to execute the **XL Release CLI**. Because the runner is inside your network, it can authenticate with the legacy orchestrator and trigger the release, bridging the gap between modern AI and legacy operations.
 
 ## Repository Structure
