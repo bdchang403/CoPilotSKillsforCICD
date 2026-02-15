@@ -1,3 +1,6 @@
 # Ignore the local configuration file
 config/skill.conf
 scripts/confluence_sync/confluence.conf
+
+# Secrets
+.env
