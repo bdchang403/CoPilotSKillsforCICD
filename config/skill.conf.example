@@ -1,0 +1,11 @@
+# Example Configuration for Deployment Skill
+# Copy this to skill.conf and ignore it in git.
+
+# The runner scale set to use for this deployment
+RUNNER_SET="my-runner-set"
+
+# The deployment target environment (e.g., production, staging)
+DEPLOY_TARGET="production"
+
+# The path to the actual deployment script relative to the repo root
+REAL_DEPLOY_SCRIPT="scripts/deploy.sh"

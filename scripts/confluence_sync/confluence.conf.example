@@ -1,0 +1,20 @@
+# Confluence Sync Configuration
+# Copy this file to confluence.conf and fill in your details
+
+# Your Confluence base URL (e.g., https://your-domain.atlassian.net/wiki)
+CONFLUENCE_URL="https://your-domain.atlassian.net/wiki"
+
+# Your email address (for Cloud) or username (for Server)
+CONFLUENCE_USERNAME="your-email@example.com"
+
+# Your API Token (for Cloud) or Password/PAT (for Server)
+CONFLUENCE_TOKEN="your-api-token"
+
+# The ID of the root page to start syncing from
+PAGE_ID="123456789"
+
+# Output directory for the Markdown files
+OUTPUT_DIR="./docs/confluence"
+
+# Set to "true" for Confluence Cloud, "false" for Server/Data Center
+IS_CLOUD="true"
