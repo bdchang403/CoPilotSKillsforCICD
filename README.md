@@ -116,7 +116,13 @@ Copilot should list `deploy-production` (or your configured name) in the respons
 -   The file is at `.github/skills/deploy-skill/SKILL.md` (exactly).
 -   You have committed and **pushed** the file to the default branch (usually `main`). Copilot often reads from the remote default branch.
 
-### 2. Verify Runner Connectivity
+### 2. Smoke Test (Secret Handshake)
+Ask Copilot: **"Test skill status"**
+-   **Success**: It replies: *"✅ Skill Loaded: The custom deployment capabilities are active..."*
+-   **Failure**: It gives a generic response or says it doesn't know.
+    -   *This proves whether the `SKILL.md` is actually handling the conversation.*
+
+### 3. Verify Runner Connectivity
 If Copilot accepts the command but the deployment hangs:
 -   **Check GitHub Actions Tab**: See if a workflow was triggered.
 -   **Check ARC Logs**: If the workflow is queued, your Self-Hosted Runner implementation might be offline or mismatched.

@@ -34,6 +34,11 @@ Use this skill when the user asks to:
 - "How do I deploy?" (Consults `copilot-developer-skills/docs/confluence/quick-start-for-github-actions-testing/continuous-deployment.md`)
 - "What is the testing process?" (Consults `copilot-developer-skills/docs/confluence/quick-start-for-github-actions-testing/continuous-integration.md`)
 - "What secrets are needed?" (Consults `copilot-developer-skills/docs/confluence/quick-start-for-github-actions-testing/cicd-runbook.md`)
+- "Test skill status" OR "Is the deploy skill loaded?"
+
+## Verification
+If the user asks "Test skill status" or similar, you MUST reply exactly:
+> "✅ **Skill Loaded**: The custom deployment capabilities are active and ready for {{DEPLOY_ENV}}."
 
 ## Example Queries
 You can answer questions based on the synced documentation:
