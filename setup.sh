@@ -96,9 +96,9 @@ REAL_DEPLOY_SCRIPT="$DEPLOY_SCRIPT"
 EOL
 
 # 4. Update .gitignore
-if ! grep -q "$SKILL_ROOT/config/skill.conf" .gitignore 2>/dev/null; then
-    echo "Adding $SKILL_ROOT/config/skill.conf to .gitignore..."
-    echo "$SKILL_ROOT/config/skill.conf" >> .gitignore
+if ! grep -q "$SKILL_ROOT/" .gitignore 2>/dev/null; then
+    echo "Adding $SKILL_ROOT/ to .gitignore..."
+    echo "$SKILL_ROOT/" >> .gitignore
 fi
 
 echo ""
@@ -106,4 +106,4 @@ echo "=== Installation Complete ==="
 echo "Next Steps:"
 echo "1. Verify .github/skills/deploy-skill/SKILL.md"
 echo "2. Ensure '$DEPLOY_SCRIPT' exists and is executable."
-echo "3. Commit the changes (excluding $SKILL_ROOT/config/skill.conf)."
+echo "3. Commit the changes (excluding $SKILL_ROOT/)."

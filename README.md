@@ -63,7 +63,7 @@ The installer will:
 -   Create a `copilot-developer-skills/` directory containing scripts and docs.
 -   Install the skill definition to `.github/skills/`.
 -   Generate a local configuration file at `copilot-developer-skills/config/skill.conf`.
--   Add the config file to your `.gitignore`.
+-   Add the `copilot-developer-skills/` directory to your `.gitignore`.
 
 ### Option 2: Manual Installation
 
@@ -82,7 +82,7 @@ If you prefer to configure everything yourself:
     -   Copy `copilot-developer-skills/config/skill.conf.example` to `copilot-developer-skills/config/skill.conf`.
     -   Edit `skill.conf` to set your `RUNNER_SET`, `DEPLOY_TARGET`, and `REAL_DEPLOY_SCRIPT` path.
 5.  **Update .gitignore**:
-    -   Add `copilot-developer-skills/config/skill.conf` to your `.gitignore` file.
+    -   Add `copilot-developer-skills/` to your `.gitignore` file.
 
 ## Usage
 
